@@ -1,0 +1,12 @@
+{
+  "name": "bitbank",
+  "version": "1.0.0",
+  "description": "Melhorando o Bitbank com herança",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Roberto Pacheco",
+  "license": "ISC",
+  "type": "module"
+}
