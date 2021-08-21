@@ -1,7 +1,11 @@
 import { Cliente } from "../Cliente/Cliente.js"
 
+//"Conta" é uma classe abstrata
 export class Conta{
     constructor(saldoInicial, cliente, agencia){
+        if(this.constructor == Conta){
+            throw new Error('Essa é uma classe abstrata. Você não deve criar uma instância dela.')
+        }
         this._saldo = saldoInicial
         this._cliente = cliente
         this._agencia = agencia
