@@ -16,18 +16,13 @@ const cliente3 = new Cliente('Rafael', 91234186181)
 const contaSalario1 = new ContaSalario(0, cliente3, 1003)
 
 
-contaCorrente1.depositar(300)
-contaPoupanca1.depositar(600)
-contaSalario1.depositar(900)
+contaCorrente1.depositar(100)
+contaPoupanca1.depositar(100)
+contaSalario1.depositar(100)
 
-contaCorrente1.sacar(150)
-contaPoupanca1.sacar(100)
-contaSalario1.sacar(100)
-
-contaCorrente1.transferir(50, contaPoupanca1)
-contaPoupanca1.transferir(50, contaSalario1)
-contaSalario1.transferir(50, contaCorrente1)
-
+contaCorrente1.sacar(10)
+contaPoupanca1.sacar(10)
+contaSalario1.sacar(10)
 
 console.log(contaCorrente1)
 console.log(contaPoupanca1)

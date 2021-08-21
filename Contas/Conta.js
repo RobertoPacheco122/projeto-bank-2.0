@@ -25,11 +25,19 @@ export class Conta{
         return this._saldo
     }
 
+    //Método abstrato
     sacar(valor){
-        if(this._saldo >= valor){
-            this._saldo -= valor
-            return valor
+        throw new Error('O método "sacar" da conta é abstrato. Você deve o sobrescrever e ao fim retornar o "sacar" privado passando o valor.')
+    }
+
+    _sacar(valor, taxa){
+        const valorSacado = valor * taxa
+        if(this._saldo >= valorSacado){
+            this._saldo -= valorSacado
+            return valorSacado
         }
+
+        return 0
     }
 
     depositar(valor){
