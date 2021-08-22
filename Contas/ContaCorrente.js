@@ -5,7 +5,6 @@ export class ContaCorrente extends Conta{
         super(saldoInicial, cliente, agencia)
     }
     
-    //Taxa de 10% sobre
     sacar(valor){
         let taxa = 1.1
         return this._sacar(valor, taxa)
